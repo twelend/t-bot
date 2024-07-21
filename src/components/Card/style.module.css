@@ -102,6 +102,23 @@
     color: var(--color-primary)
 }
 
+.card__button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.card__button svg path {
+    width: 20px;
+    height: 20px;
+    fill: #b2b1b1;
+}
+.card__button:hover svg path {
+    width: 20px;
+    height: 20px;
+    fill: #F44336;
+}
+
 .img_container__cube span, .cube_in_target span{
     padding: 5px;
     height: 100%;

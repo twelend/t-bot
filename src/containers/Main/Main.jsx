@@ -11,9 +11,13 @@ const Main = () => {
   return (
     <div className={s.main}>
       { Array.isArray(cards) ? (
-        cards.map((card, index) => {
-          return <Card key={index} {...card}/>
-        }) 
+            cards.length ? (
+              cards.map((card, index) => {
+              return <Card key={index} {...card}/>
+            })
+          ) : (
+            <div>Карточек нет</div>
+          )
         ) : (
           <div>Ошибка в получении карточек</div>
         )
